@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent - Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/silent.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .header {
+            background-color: #ffffff;
+            color: #4CAF50;
+            padding: 10px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+        .header img {
+            height: 60px; /* Increased logo size */
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+        }
+        .nav a {
+            color: #4c91af;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .nav button {
+            background-color: #4c6daf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav button:hover {
+            background-color: #45A049;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            color: #fff; /* Adjusted color to stand out against background */
+        }
+        .content h1 {
+            font-size: 2.5em;
+            color: #fff; /* Adjusted color to stand out against background */
+        }
+        .content form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            color: #333;
+        }
+        .content form div {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .content form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .content form input, .content form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .content form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .content form button:hover {
+            background-color: #45A049;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div>
+                <img src="images/silent.png" alt="Silent Logo">
+            </div>
+            <div>
+                <a href="home.html">Home</a>
+                <a href="guidelines.html">Guidelines</a>
+                <a href="feedback.html">Feedback</a>
+                <button class="contact-button" onclick="location.href='login.php'">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <video class="video-background" autoplay muted loop>
+        <source src="images/home.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h1>We Value Your Feedback</h1>
+        <form action="submit_feedback.php" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

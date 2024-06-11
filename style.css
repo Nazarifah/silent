@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+header {
+    background: rgba(231, 234, 209, 0.8);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    z-index: 1; /* Ensure the header is above the video */
+}
+
+.head-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.quote {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quote p {
+    font-size: 24px;
+    color: #333;
+}
+
+.quote h5 {
+    font-size: 16px;
+    color: #333;
+}
+
+.play {
+    margin-top: 20px;
+}
+
+.play i {
+    margin-right: 10px;
+}
+
+.play a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-swipe {
+    padding: 50px 20px;
+    background: rgba(163, 193, 193, 0.8);
+    color: white;
+}
+
+.diffSection {
+    text-align: center;
+    font-size: 55px; /* Increased font size */
+    padding-bottom: 0; /* Removed padding */
+    color: #fff;
+    background: rgba(247, 243, 243, 0.5);
+    border-radius: 10px;
+    margin: 50px 20px; /* Increased margin */
+}
+
+.option-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Add some spacing between the "Please Choose Your Option" section and the cards */
+}
+
+.s-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.s-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(254, 253, 253, 0.993);
+}
+
+.s-card img {
+    width: 100px;
+    height: auto;
+}
+
+.s-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.s-card:hover {
+    transform: scale(1.05);
+}
+
+.logout, .login-signup {
+    color: rgb(49, 44, 44);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about_section, #portfolio_section, #team_section, #services_section, #contactus_section {
+    font-family: 'Open Sans', sans-serif;
+    color: #2b2d2e;
+    position: relative;
+}
+
+.play i {
+    margin-right: 10px;
+    color: black; /* Set the color to black */
+}
