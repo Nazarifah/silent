@@ -11,3 +11,5 @@
    - scroll untill find "delete" button.
    - click "delete" button.
    - click "commit changes" button.
+
+git command refer - https://www.freecodecamp.org/news/10-important-git-commands-that-every-developer-should-know/ or https://www.atlassian.com/git/glossary#commands
