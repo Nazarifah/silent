@@ -6,3 +6,8 @@
    - then drop all the files to upload more.
 
 2. DELETE FOLDER/FILE (PULL)
+   - click file_name.
+   - click "..." button on the top right corner.
+   - scroll untill find "delete" button.
+   - click "delete" button.
+   - click "commit changes" button.
